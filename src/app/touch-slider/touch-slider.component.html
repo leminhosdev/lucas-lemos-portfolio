@@ -1,0 +1,13 @@
+<div class="slide-container">
+     <div class="slider-item" *ngFor="let image of images; let i = index" class="slider-img" [ngClass]="{
+        'selected': i === selectedindex,
+        'prev': i === selectedindex - 1,
+        'next': i === selectedindex + 1,
+        'hideLeft': i < selectedindex - 1,
+        'hideRight': i > selectedindex + 1,
+    }">
+            <img [src]="image.imgSrc" [alt]="image.imgAlt" class="slider-img">
+            
+    </div>
+</div>
+   

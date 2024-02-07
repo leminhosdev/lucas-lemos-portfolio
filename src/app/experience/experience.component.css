@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+p, h3,i,h2,li,h1{
+    font-family: 'DM Sans', sans-serif;
+}
+
+li{
+    color: #ffffff;
+}
+
+#titulo{
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 3em;
+    color: #ffffff;
+}
+
+.ponto{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 25px;
+}
+.timeline-section{
+	background: linear-gradient(240deg, #1e1030, #030A13);
+	padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #ffffff;
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: left;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #fa00c4;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+	color: #f362d4;
+	margin:6px 0 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+.timeline-content{
+    background-color: #2a2352;
+	padding: 30px;
+	border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+	color: #ffffff;
+	margin-left: 5px;
+	text-transform: capitalize;
+	font-weight: 500;
+    align-self: end;
+}
+.timeline-content p{
+    color: #c8c8c8;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
+#memoru-date{
+    text-align: right;
+}
+
+.empresa-container{
+    display: flex;
+    margin-top: 10px;
+}
+.empresa-container img{
+    width: 60px;
+    height: fit-content;
+    border-radius: 7px;
+    
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+    #memoru-date{
+        text-align: left;
+    }
+}
