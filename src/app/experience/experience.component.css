@@ -18,7 +18,7 @@ li{
 #titulo{
     font-size: 40px;
     font-weight: 800;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
     color: #ffffff;
 }
 
@@ -28,7 +28,7 @@ li{
     font-size: 25px;
 }
 .timeline-section{
-	background: linear-gradient(240deg, #1e1030, #030A13);
+	background: linear-gradient(220deg, #1e1030, #030A13);
 	padding: 20px 15px;
     display: flex;
     justify-content: center;
@@ -92,6 +92,10 @@ li{
 	text-transform: capitalize;
 	font-weight: 500;
     align-self: end;
+}
+.empresa-container p{
+	margin-left: 10px;
+	align-self: end;
 }
 .timeline-content p{
     color: #c8c8c8;

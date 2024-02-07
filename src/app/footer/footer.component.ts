@@ -12,4 +12,13 @@ export class FooterComponent {
   myYoutube = faYoutube
   myGithub = faGithub
   arrow = faArrowRight
+
+
+  abrirLink(link: string): void {
+    window.open(link, '_blank');
+  }
+  abrirPDF(): void {
+    window.open('../../assets/Lucas-Lemos-Resume.pdf','_blank');
+  }
 }
+
