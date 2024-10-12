@@ -36,6 +36,6 @@ export class HomePageComponent {
     window.open(link, '_blank');
   }
   abrirPDF(): void {
-    window.open('../../assets/Lucas-Lemos-Resume.pdf','_blank');
+    window.open('../../assets/CV_tech.pdf','_blank');
   }
 }
